@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brutăria Claudia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="styleMainPage.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="generalButton.css">
+    <link rel="stylesheet" href="cardProduct.css">
+    <link rel="stylesheet" href="styleStoreCard.css">
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="photoStack.css">
+    <link rel="stylesheet" href="desprenoi.css">
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="logomic.jpg" alt="Logo Brutărie">
+            <h1>Brutăria Claudia</h1>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">ACASĂ</a>
+
+            <div class="dropdown">
+                <a href="products.html" class="dropbtn">PRODUSE ▾</a>
+
+                <div class="dropdown-content">
+                    <a href="products.html#paine-maia">Pâine cu maia</a>
+                    <a href="products.html#paine-fara-gluten">Pâine fără gluten</a>
+                    <a href="products.html#patiserie">Patiserie</a>
+                    <a href="products.html#patiserie-fara-gluten">Patiserie fără gluten</a>
+                </div>
+            </div>
+
+            <a href="#magazine">MAGAZINE</a>
+            <a href="desprenoi.html">DESPRE NOI</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </div>
+
+    <section class="contact-hero">
+        <div class="contact-hero-overlay"></div>
+
+        <div class="contact-hero-content">
+            <p class="small-title center">Ia legătura cu noi</p>
+            <h2>Contact Brutăria Claudia</h2>
+            <p>
+                Ai o întrebare, vrei să afli programul magazinelor sau cauți cea mai apropiată locație?
+                Ne găsești rapid pe social media sau direct în magazinele noastre.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="contact-section">
+        <div class="contact-container">
+
+            <div class="contact-info-box">
+                <p class="small-title">Suntem aproape de tine</p>
+                <h2>Hai să vorbim</h2>
+                <p>
+                    Pentru întrebări despre produse, comenzi sau locații, ne poți contacta prin rețelele sociale
+                    sau ne poți vizita direct în una dintre brutăriile noastre.
+                </p>
+
+                <div class="contact-links">
+
+                    <a href="https://www.instagram.com/brutariaclaudia/" target="_blank" class="contact-link-card">
+                        <span class="contact-icon">📸</span>
+                        <div>
+                            <h3>Instagram</h3>
+                            <p>@brutariaclaudia</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.facebook.com/BrutariaClaudia/" target="_blank" class="contact-link-card">
+                        <span class="contact-icon">📘</span>
+                        <div>
+                            <h3>Facebook</h3>
+                            <p>Brutăria Claudia</p>
+                        </div>
+                    </a>
+
+                    <a href="#magazine" class="contact-link-card">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h3>Google Maps</h3>
+                            <p>Vezi locațiile noastre</p>
+                        </div>
+                    </a>
+
+                    <a href="mailto:contact@brutariaclaudia.ro" class="contact-link-card">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contact@brutariaclaudia.ro</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div class="contact-form-box">
+                <h2>Scrie-ne un mesaj</h2>
+                <p>Completează formularul, iar noi îți răspundem cât de curând.</p>
+
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nume</label>
+                        <input type="text" id="name" placeholder="Numele tău">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="emailul.tau@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mesaj</label>
+                        <textarea id="message" rows="5" placeholder="Scrie mesajul tău aici..."></textarea>
+                    </div>
+
+                    <button type="submit" class="general-button">Trimite mesajul</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section" id="magazine">
+        <h2>Magazinele noastre</h2>
+        <p>Ne poți găsi în mai multe locații, aproape de tine.</p>
+
+        <div class="stores-container">
+
+            <div class="card">
+                <img src="alac.jpg" alt="Magazin Alac">
+
+                <div class="card-content">
+                    <h3>Alac</h3>
+                    <h4>Cluj-Napoca | Centru</h4>
+
+                    <div class="store-info">
+                        <p class="store-label">Program:</p>
+                        <p>Luni - Vineri: 10:15 - 19:00</p>
+                        <p>Sâmbătă: 10:15 - 15:00</p>
+                        <p>Duminică: <b>închis</b></p>
+                    </div>
+
+                    <div class="store-info">
+                        <p class="store-label">Adresă:</p>
+                        <p>Str. Ioan Rațiu, Cluj-Napoca</p>
+                    </div>
+
+                    <a href="https://maps.app.goo.gl/24wig7q5QLeHc96m7" target="_blank" class="general-button">
+                        Vezi pe hartă
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="cipariu.jpg" alt="Magazin Cipariu">
+
+                <div class="card-content">
+                    <h3>Brutăria Claudia</h3>
+                    <h4>Cluj-Napoca | Brâncuși</h4>
+
+                    <div class="store-info">
+                        <p class="store-label">Program:</p>
+                        <p>Luni - Vineri: 08:00 - 19:00</p>
+                        <p>Sâmbătă: 08:00 - 15:00</p>
+                        <p>Duminică: <b>închis</b></p>
+                    </div>
+
+                    <div class="store-info">
+                        <p class="store-label">Adresă:</p>
+                        <p>Str. Constantin Brâncuși, nr.84, Cluj-Napoca</p>
+                    </div>
+
+                    <a href="https://maps.app.goo.gl/44AQgXcACfryTV2BA" target="_blank" class="general-button">
+                        Vezi pe hartă
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="floresti.png" alt="Magazin Florești">
+
+                <div class="card-content">
+                    <h3>Claudia Brutărie Artizanală</h3>
+                    <h4>Florești</h4>
+
+                    <div class="store-info">
+                        <p class="store-label">Program:</p>
+                        <p>Luni - Vineri: 09:00 - 19:00</p>
+                        <p>Sâmbătă: 09:00 - 15:00</p>
+                        <p>Duminică: <b>închis</b></p>
+                    </div>
+
+                    <div class="store-info">
+                        <p class="store-label">Adresă:</p>
+                        <p>Str. Eroilor, nr.14, Florești</p>
+                    </div>
+
+                    <a href="https://maps.app.goo.gl/Q2WSrQWiypg644St7" target="_blank" class="general-button">
+                        Vezi pe hartă
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <div class="footer">
+        <p>© 2026 | Brutăria Claudia | Toate drepturile rezervate</p>
+        <p>Email: contact@brutarianoastra.ro | Telefon: 0740 000 000</p>
+        <p>Adresă sediu: Cluj-Napoca, România</p>
+    </div>
+
+    <script src="rotateCard.js"></script>
+
+    <script src="review.js"></script>
+
+    <script src="slideshow.js"></script>
+
+</body>
+
+</html>
