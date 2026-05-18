@@ -327,3 +327,310 @@
         font-size: 1rem;
     }
 }
+
+/* ========================= */
+/* RESPONSIVE MAINPAGE */
+/* ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 60px 35px;
+        min-height: auto;
+        gap: 45px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h2 {
+        font-size: 42px;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .photo-stack {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .section {
+        padding: 60px 35px;
+    }
+
+    .about-section {
+        padding: 70px 30px;
+    }
+
+    .about-paper {
+        width: 100%;
+        max-width: 760px;
+        padding: 12% 14%;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .about-paper-content {
+        width: 80%;
+    }
+
+    .reviews-section {
+        padding: 60px 35px;
+    }
+}
+
+/* TELEFON */
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 45px 20px 55px 20px;
+        min-height: auto;
+        text-align: center;
+        gap: 35px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+
+    .hero-text p {
+        font-size: 17px;
+        line-height: 1.5;
+        margin-bottom: 24px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .hero-buttons .general-button {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    .photo-stack {
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .stack-photo {
+        max-width: 230px;
+    }
+
+    .products-section {
+        padding: 50px 18px;
+    }
+
+    .products-section h2,
+    .section h2,
+    .reviews-section h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .products-section p,
+    .section p,
+    .reviews-section > p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .product-card {
+        height: 430px;
+    }
+
+    .product-card-front img {
+        height: 300px;
+    }
+
+    .product-card-front h3 {
+        height: 130px;
+        font-size: 1.05rem;
+        padding: 12px;
+    }
+
+    .product-card-back {
+        padding: 18px;
+        justify-content: flex-start;
+        overflow-y: auto;
+    }
+
+    .product-card-back h3 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .product-card-back p {
+        font-size: 0.9rem;
+        line-height: 1.45;
+    }
+
+    .section {
+        padding: 50px 18px;
+    }
+
+    .about-section {
+        padding: 55px 12px;
+        background-position: center;
+    }
+
+    .about-paper {
+        width: 100%;
+        max-width: 380px;
+        min-height: 520px;
+        padding: 90px 38px;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    .about-paper-content {
+        width: 100%;
+    }
+
+    .about-paper-content h2 {
+        font-size: 28px;
+        margin-bottom: 14px;
+    }
+
+    .about-paper-content p {
+        font-size: 18px;
+        line-height: 1.35;
+        margin-bottom: 18px;
+    }
+
+    .about-paper-content .general-button {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    .stores-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .card img {
+        height: 260px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .card-content h4 {
+        font-size: 0.9rem;
+        margin-bottom: 18px;
+    }
+
+    .card-content p {
+        font-size: 15px;
+    }
+
+    .reviews-section {
+        padding: 50px 18px;
+    }
+
+    .reviews-carousel {
+        max-width: 100%;
+    }
+
+    .reviews-wrapper {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .side-review {
+        display: none;
+    }
+
+    .review-card {
+        min-height: auto;
+        padding: 28px 22px;
+        margin: 0 35px;
+    }
+
+    .review-text {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .review-name {
+        font-size: 1.1rem;
+    }
+
+    .review-arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 22px;
+    }
+
+    .left-arrow {
+        left: 0;
+    }
+
+    .right-arrow {
+        right: 0;
+    }
+
+    .all-products-button {
+        margin-top: 25px;
+    }
+}

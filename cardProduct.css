@@ -115,3 +115,39 @@
     align-items: center;
     justify-content: center;
 }
+
+/* tablet */
+@media (max-width: 992px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+}
+
+/* telefon */
+@media (max-width: 600px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+        padding: 0;
+        max-width: 360px;
+    }
+
+    .product-card {
+        height: 430px;
+    }
+
+    .product-card-front img {
+        height: 300px;
+    }
+
+    .product-card-back {
+        padding: 18px;
+        overflow-y: auto;
+        justify-content: flex-start;
+    }
+
+    .product-card-back p {
+        font-size: 0.9rem;
+        line-height: 1.45;
+    }
+}
