@@ -1,0 +1,51 @@
+.photo-stack {
+    position: relative;
+    width: 49%;
+    max-width: 820px;
+    height: 380px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stack-photo {
+    position: absolute;
+
+    max-width: 610px;
+    max-height: 490px;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+    display: block;
+
+    border-radius: 16px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.38);
+
+    --x: 0px;
+    --y: 0px;
+    --r: 0deg;
+    --s: 1;
+
+    transform: translate(var(--x), var(--y)) rotate(var(--r)) scale(var(--s));
+
+    transition:
+        transform 0.9s ease,
+        box-shadow 0.9s ease;
+
+    opacity: 1;
+}
+
+.stack-photo.lifting {
+    transform: translate(-160px, -60px) rotate(-14deg) scale(1.1);
+    z-index: 100;
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.48);
+}
+
+.stack-photo.move-to-top {
+    transform: translate(0px, 0px) rotate(4deg) scale(1.1);
+    z-index: 100;
+    box-shadow: 0 26px 55px rgba(0, 0, 0, 0.52);
+}

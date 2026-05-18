@@ -1,0 +1,17 @@
+.general-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #8b5e3c;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.general-button:hover {
+    background-color: #6f492d;
+    transform: translateY(-4px);
+}

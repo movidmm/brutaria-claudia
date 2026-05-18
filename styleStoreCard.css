@@ -1,0 +1,83 @@
+.stores-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 25px;
+    text-align: left;
+}
+
+.card-content h3 {
+    margin-bottom: 5px;
+    color: #8b5e3c;
+    font-size: 1.45rem;
+}
+
+.card-content h4 {
+    margin: 0 0 25px 0;
+    color: #6a5648;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.card-content p {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #6a5648;
+}
+
+.store-info {
+    margin-bottom: 20px;
+}
+
+.store-label {
+    font-weight: bold;
+    color: #4a2c17;
+    margin-bottom: 5px;
+}
+
+.card-content .general-button {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* tablet */
+@media (max-width: 992px) {
+    .stores-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* telefon */
+@media (max-width: 600px) {
+    .stores-container {
+        grid-template-columns: 1fr;
+    }
+}
