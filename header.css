@@ -115,17 +115,35 @@ html {
 @media (max-width: 768px) {
     .header {
         height: 70px;
-        padding-left: 10px;
-        padding-right: 18px;
+        padding-left: 14px;
+        padding-right: 14px;
+        position: fixed;
+        justify-content: space-between;
     }
 
-    .logo h1 {
-        font-size: 20px;
-        white-space: nowrap;
+    .logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
 
     .logo img {
-        height: 65px;
+        height: 52px;
+        width: 52px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .logo h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        font-size: 20px;
+        font-family: Georgia, serif;
+        white-space: nowrap;
+        text-align: center;
+        margin: 0;
     }
 
     .menu-toggle {
@@ -136,6 +154,7 @@ html {
         font-size: 34px;
         cursor: pointer;
         z-index: 3001;
+        margin-left: auto;
     }
 
     .nav-links {
@@ -175,17 +194,29 @@ html {
     }
 
     .dropdown-content {
+        display: none;
         position: static;
-        display: block;
         background-color: transparent;
         box-shadow: none;
         min-width: 100%;
         border-radius: 0;
-        padding-left: 12px;
+        padding-left: 18px;
+    }
+
+    .dropdown.active .dropdown-content {
+        display: block;
     }
 
     .dropdown-content a {
         font-size: 14px;
         padding: 9px 10px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    .dropdown.active:hover .dropdown-content {
+        display: block;
     }
 }
