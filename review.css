@@ -142,7 +142,7 @@
     right: 10px;
 }
 
-/* tablet */
+/* tablet */ 
 @media (max-width: 992px) {
     .reviews-carousel {
         height: 460px;
