@@ -49,3 +49,26 @@
     z-index: 100;
     box-shadow: 0 26px 55px rgba(0, 0, 0, 0.52);
 }
+
+@media (max-width: 768px) {
+    .photo-stack {
+        width: 100%;
+        max-width: none;
+        height: 360px;
+        margin-top: 40px;
+    }
+
+    .stack-photo {
+        width: 250px;
+        max-width: none;
+        max-height: none;
+    }
+
+    .stack-photo.lifting {
+        transform: translate(-90px, -45px) rotate(-14deg) scale(1.08);
+    }
+
+    .stack-photo.move-to-top {
+        transform: translate(0px, 0px) rotate(4deg) scale(1.08);
+    }
+}

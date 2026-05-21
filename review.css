@@ -163,28 +163,68 @@
 }
 
 /* telefon */
+/* telefon */
 @media (max-width: 600px) {
     .reviews-section {
         padding: 60px 20px;
     }
 
     .reviews-carousel {
-        height: 430px;
+        height: 460px;
+        overflow: hidden;
+    }
+
+    .reviews-stage {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
     }
 
     .review-card {
-        width: 82%;
+        width: 72%;
+        max-width: 330px;
         padding: 30px 22px;
+
+        left: 50%;
+        top: 50%;
+        box-sizing: border-box;
     }
 
-    .prev-review,
+    .active-review {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+        filter: blur(0);
+        z-index: 5;
+    }
+
+    .prev-review {
+        transform: translate(-105%, -50%) scale(0.72);
+        opacity: 0.28;
+        filter: blur(2px);
+        z-index: 3;
+        pointer-events: none;
+    }
+
     .next-review {
+        transform: translate(5%, -50%) scale(0.72);
+        opacity: 0.28;
+        filter: blur(2px);
+        z-index: 3;
+        pointer-events: none;
+    }
+
+    .hidden-review {
+        transform: translate(-50%, -50%) scale(0.55);
         opacity: 0;
+        filter: blur(4px);
+        z-index: 1;
         pointer-events: none;
     }
 
     .review-text {
         font-size: 1rem;
+        line-height: 1.55;
     }
 
     .left-arrow {
