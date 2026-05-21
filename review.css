@@ -144,6 +144,7 @@
 
 
 /* telefon */
+/* telefon */
 @media (max-width: 600px) {
     .reviews-section {
         padding: 60px 0;
@@ -164,23 +165,20 @@
     }
 
     .reviews-stage {
-        width: 100vw;
+        width: 100%;
         height: 100%;
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translateX(-50%);
+        position: relative;
         overflow: hidden;
     }
 
     .review-card {
-        width: 74%;
+        width: 74vw;
         max-width: 330px;
         padding: 30px 22px;
 
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 50vw;
 
         box-sizing: border-box;
     }
