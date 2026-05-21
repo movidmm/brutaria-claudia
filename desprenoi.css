@@ -243,7 +243,7 @@
 }
 /* RESPONSIVE */
 
-/* RESPONSIVE PENTRU DESPRE NOI - TELEFON */
+/* RESPONSIVE DOAR PENTRU SECTIUNEA CU SCRISOAREA */
 @media (max-width: 768px) {
 
     .about-sectionn {
@@ -257,12 +257,11 @@
         align-items: center;
     }
 
-    /* textul mare de început să fie primul */
+    /* textul mare vine primul */
     .about-sectionn .about-text {
         order: 1;
         width: 100%;
         max-width: 100%;
-        padding: 0;
         text-align: center;
     }
 
@@ -285,42 +284,41 @@
         text-align: center;
     }
 
-    /* scrisoarea să fie sub text */
-    .about-paperr {
+    /* scrisoarea vine sub text */
+    .about-sectionn .about-paperr {
         order: 2;
         flex: none;
         width: 100%;
         max-width: 360px;
         min-height: 620px;
-
         padding: 95px 38px 105px;
         background-size: 100% 100%;
         background-position: center;
     }
 
-    .about-paper-content {
+    .about-sectionn .about-paper-content {
         width: 78%;
     }
 
-    .about-paper-content h2 {
+    .about-sectionn .about-paper-content h2 {
         font-size: 32px;
         margin-bottom: 14px;
     }
 
-    .about-paper-content p {
+    .about-sectionn .about-paper-content p {
         font-size: 17px;
         line-height: 1.55;
         margin-bottom: 16px;
     }
 
-    /* dacă ai imagine în secțiunea asta, să nu mai fugă în dreapta */
-    .about-hero-image {
+    /* poza, dacă există în aceeași secțiune */
+    .about-sectionn .about-hero-image {
         order: 3;
         flex: none;
         width: 100%;
     }
 
-    .about-hero-image img {
+    .about-sectionn .about-hero-image img {
         width: 100%;
         max-width: 330px;
         height: auto;
