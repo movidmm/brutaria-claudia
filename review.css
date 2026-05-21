@@ -142,26 +142,7 @@
     right: 10px;
 }
 
-@media (max-width: 992px) {
-    .reviews-carousel {
-        height: 460px;
-    }
 
-    .review-card {
-        width: calc((100% - 30px) / 2);
-        max-width: none;
-    }
-
-    .prev-review {
-        transform: translate(-115%, -50%) scale(0.72);
-    }
-
-    .next-review {
-        transform: translate(15%, -50%) scale(0.72);
-    }
-}
-
-/* telefon */
 /* telefon */
 @media (max-width: 600px) {
     .reviews-section {
@@ -176,17 +157,19 @@
 
     .reviews-carousel {
         width: 100%;
-        max-width: 100%;
         height: 460px;
-        margin: 0 auto;
+        margin: 0;
         position: relative;
         overflow: hidden;
     }
 
     .reviews-stage {
-        width: 100%;
+        width: 100vw;
         height: 100%;
-        position: relative;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
         overflow: hidden;
     }
 
@@ -210,7 +193,7 @@
     }
 
     .prev-review {
-        transform: translate(-112%, -50%) scale(0.72);
+        transform: translate(-115%, -50%) scale(0.72);
         opacity: 0.25;
         filter: blur(2px);
         z-index: 3;
@@ -218,7 +201,7 @@
     }
 
     .next-review {
-        transform: translate(12%, -50%) scale(0.72);
+        transform: translate(15%, -50%) scale(0.72);
         opacity: 0.25;
         filter: blur(2px);
         z-index: 3;
@@ -246,11 +229,20 @@
         font-size: 1.2rem;
     }
 
+    .review-arrow {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .review-arrow:hover {
+        transform: translateY(-50%);
+    }
+
     .left-arrow {
-        left: 12px;
+        left: 14px;
     }
 
     .right-arrow {
-        right: 12px;
+        right: 14px;
     }
 }
