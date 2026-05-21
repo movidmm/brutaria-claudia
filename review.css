@@ -162,6 +162,7 @@
 }
 
 /* telefon */
+/* telefon */
 @media (max-width: 600px) {
     .reviews-section {
         padding: 60px 0;
@@ -174,19 +175,12 @@
     }
 
     .reviews-carousel {
-        width: 100vw;
-        max-width: 100vw;
+        width: 100%;
+        max-width: 100%;
         height: 460px;
-
-        margin-left: calc(50% - 50vw);
-        margin-right: calc(50% - 50vw);
-
+        margin: 0 auto;
         position: relative;
         overflow: hidden;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .reviews-stage {
@@ -197,18 +191,18 @@
     }
 
     .review-card {
-        width: 72%;
+        width: 74%;
         max-width: 330px;
         padding: 30px 22px;
 
-        left: 50%;
+        position: absolute;
         top: 50%;
+        left: 50%;
+
         box-sizing: border-box;
     }
 
     .active-review {
-        left: 50%;
-        top: 50%;
         transform: translate(-50%, -50%) scale(1);
         opacity: 1;
         filter: blur(0);
@@ -216,16 +210,16 @@
     }
 
     .prev-review {
-        transform: translate(-105%, -50%) scale(0.72);
-        opacity: 0.28;
+        transform: translate(-112%, -50%) scale(0.72);
+        opacity: 0.25;
         filter: blur(2px);
         z-index: 3;
         pointer-events: none;
     }
 
     .next-review {
-        transform: translate(5%, -50%) scale(0.72);
-        opacity: 0.28;
+        transform: translate(12%, -50%) scale(0.72);
+        opacity: 0.25;
         filter: blur(2px);
         z-index: 3;
         pointer-events: none;
@@ -253,10 +247,10 @@
     }
 
     .left-arrow {
-        left: 14px;
+        left: 12px;
     }
 
     .right-arrow {
-        right: 14px;
+        right: 12px;
     }
 }
