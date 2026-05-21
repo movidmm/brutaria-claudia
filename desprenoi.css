@@ -286,4 +286,87 @@
     .quote-box h2 {
         font-size: 38px;
     }
+
+    /*new */
+    .about-sectionn {
+        flex-direction: column;
+        padding: 45px 20px;
+        min-height: auto;
+        gap: 35px;
+        overflow: hidden;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* textul mare de început să fie primul */
+    .about-sectionn .about-text {
+        order: 1;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .about-sectionn .small-title {
+        font-size: 34px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    .about-sectionn .about-text h2 {
+        font-size: 36px;
+        line-height: 1.15;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+
+    .about-sectionn .custom {
+        font-size: 22px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    /* scrisoarea să fie sub text */
+    .about-paperr {
+        order: 2;
+        flex: none;
+        width: 100%;
+        max-width: 360px;
+        min-height: 620px;
+
+        padding: 95px 38px 105px;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    .about-paper-content {
+        width: 78%;
+    }
+
+    .about-paper-content h2 {
+        font-size: 32px;
+        margin-bottom: 14px;
+    }
+
+    .about-paper-content p {
+        font-size: 17px;
+        line-height: 1.55;
+        margin-bottom: 16px;
+    }
+
+    /* dacă ai imagine în secțiunea asta, să nu mai fugă în dreapta */
+    .about-hero-image {
+        order: 3;
+        flex: none;
+        width: 100%;
+    }
+
+    .about-hero-image img {
+        width: 100%;
+        max-width: 330px;
+        height: auto;
+        margin-left: 0;
+    }
+
 }
