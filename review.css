@@ -145,10 +145,12 @@
 
 /* telefon */
 /* telefon */
+/* telefon */
 @media (max-width: 600px) {
     .reviews-section {
         padding: 60px 0;
         overflow: hidden;
+        text-align: center;
     }
 
     .reviews-section h2,
@@ -159,9 +161,13 @@
     .reviews-carousel {
         width: 100%;
         height: 460px;
-        margin: 0;
+        margin: 0 auto;
         position: relative;
         overflow: hidden;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .reviews-stage {
@@ -169,6 +175,7 @@
         height: 100%;
         position: relative;
         overflow: hidden;
+        margin: 0 auto;
     }
 
     .review-card {
@@ -178,7 +185,7 @@
 
         position: absolute;
         top: 50%;
-        left: 50vw;
+        left: 50%;
 
         box-sizing: border-box;
     }
